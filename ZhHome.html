@@ -33,9 +33,9 @@
 <hr>
 
 <h3>关于我</h3>
-腾讯天衍实验室高级研究员,主要研究方向为NLP、信息安全以及医疗大数据算法的研究与业务落地。自2018年加入腾讯以来,累计发表顶级学术会议/期刊论文<b>10</b>余篇 (e.g. ACL, WWW, AAAI, NAACL, EMNLP, ICDE, TII, TOIT, etc.), <\br>
-累计申请发明专利<b>100</b>余项,并担任多个顶级学术会议/期刊审稿人,获得多项行业竞赛第一名。在此之前,在创新工场AI工程院NLP组担任算法工程师 (2017 - 2018)。<\br>
-硕士毕业于日本早稻田大学<a href="http://www.iwaihara-lab.org/pub/">数据工程实验室</a> (2017, 研究型硕士),本科毕业于电子科技大学信息安全专业 (2015)。<\br>
+腾讯天衍实验室高级研究员,主要研究方向为NLP、信息安全以及医疗大数据算法的研究与业务落地。自2018年加入腾讯以来,累计发表顶级学术会议/期刊论文<b>10</b>余篇 (e.g. ACL, WWW, AAAI, NAACL, EMNLP, ICDE, TII, TOIT, etc.), <br>
+累计申请发明专利<b>100</b>余项,并担任多个顶级学术会议/期刊审稿人,获得多项行业竞赛第一名。在此之前,在创新工场AI工程院NLP组担任算法工程师 (2017 - 2018)。<br>
+硕士毕业于日本早稻田大学<a href="http://www.iwaihara-lab.org/pub/">数据工程实验室</a> (2017, 研究型硕士),本科毕业于电子科技大学信息安全专业 (2015)。<br>
 
 <!-- <hr>
 
@@ -69,7 +69,7 @@
 			<ul>
 				<li>   该方案获得2022国家医保局解决方案大赛<b>全国第一(1/156, 行业最高奖项)</b>,2021数博会领先科技成果奖(49/560, <b>国家社会科技奖</b>),2020北京局数智医保竞赛金奖(行业首个比赛),确立在智慧医保领域的领先地位     </li>
 				<li>   在北京局真实落地部署,挖掘出<b>10多个</b>骗保团伙,经执法大队验证,<b>准确率100%,全部为高价值团伙</b>,并发现<b>新型特大团伙</b>,涉案金额<b>数千万</b>,收到客户的成果验证及感谢信  </li>
-				<li>   为腾讯在智慧医保赛道找到突破口,获得腾讯医疗副总裁支持孵化执法通产品,项目已在广东省、北京、郑州等落地     </li>
+				<li>   为腾讯在智慧医保赛道找到突破口,获得腾讯医疗副总裁支持立项执法通产品,项目已在广东省、北京、郑州等落地     </li>
 				<li>   该项目累计曝光420万次,覆盖医保及医疗行业相关人员183万,全媒体报道共178篇次, 如光明网、中新网、国际在线等多家核心党央媒,转发率超356%
 			</ul>
 
@@ -85,9 +85,9 @@
 			</ul>
 		<li><b>方案及主要工作</b></li>
 			<ul>
-				<li>   基于知识蒸馏的语言模型LTD-BERT及持续学习算法,提供轻量级句子级语义特征,并基于语义哈希技术提升检索速度 </li>
+				<li>   基于知识蒸馏的语言模型LTD-BERT(LearningToDistill BERT)及持续学习(Continual Learning)算法,提供轻量级句子级语义特征,并基于语义哈希(Semantic Hash)技术提升检索速度 </li>
 				<li>   基于Self-attention提供词级别交互特征、基于对比学习(如ConSERT等)解决语义坍缩问题  </li>
-				<li>   基于改进的Eli5及LambdaMART等算法提供排序算法可解释性  </li>
+				<li>   基于改进的Eli5及L2R(如LambdaMART等)算法提供排序算法可解释性  </li>
 				<li>   提出RePaGer系统自动生成阅读路径,基于改进的NEWST模型在引用图上进行路径选择  </li>
 			</ul>
 		<li><b>项目成果及亮点</b></li>
@@ -139,8 +139,32 @@
 
 <table class="imgtable"><tr><td>
 <td align="left"><h4>NLP算法工程师 创新工场 AI工程院 NLP组 (2017.9 ~ 2018.5)</h4>
+</li>
+<li><b>爆款预测, 算法Leader</b></a>
+	<ul>
+		<li><b>背景及挑战</b></li>
+			<ul>
+				<li>   2017年,网红甜品"脏脏包"突然成为爆品,该系统可基于社交媒体自动发现甜品领域新词并预测能否成为爆款,从而为商家提供商品舆情和爆款推荐服务 </li>
+				<li>   领域词典需要从0构建,且需要定期维护更新,自动发现新词  </li>
+				<li>   爆款难以归因,爆发预测(Burst Prediction)领域文献极少,业界已落地解决方案更少 </li>
+			</ul>
+		<li><b>方案及主要工作</b></li>
+			<ul>
+				<li>   作为<b>算法Leader</b>,设计了基于社交网络文本的两阶段算法方案: 1)领域词典自动构建及新词发现 2)爆发检测及预测 </li>
+				<li>   领域词典自动构建及新词发现:基于hashtag共现及词边界,建立共现图,使用社区探测算法进行社区探测及新词发现,使用文本分类算法(HAN等)进行过滤  </li>
+				<li>   爆发检测及预测:定义了Trigger/Burst/Off-Burst/Off-Trigger/Death五个生命周期,基于时间序列算法进行特征建模及分类预测  </li>
+			</ul>
+		<li><b>项目成果及亮点</b></li>
+			<ul>
+				<li>   新词召回率达97%,发现25个甜品,如:魔法翻糖、冰皮月饼、翻糖人偶等 </li>
+				<li>   文本分类精确率达96.7%,其中HAH模型效果远好于WordCNN/DPCNN/Bi-GRU等模型 </li>
+				<li>   爆发预测准确率达90% </li>
+			</ul>
+	</ul>
+</li>
+
 <li>Participated in a Task-oriented Dialogue System, designed the algorithm of NER/ID/DST;</li>
-<li>Owned a burst prediction system, designed the algorithm of constructing domain dictionary and hashtag-based burst prediction.</li>
+<!-- <li>Owned a burst prediction system, designed the algorithm of constructing domain dictionary and hashtag-based burst prediction.</li> -->
 </td></tr></table>
 
 <hr>
